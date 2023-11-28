@@ -1,6 +1,6 @@
 {
   "name": "@charles-johnson/hyperview",
-  "version": "0.73.2",
+  "version": "0.73.3",
   "main": "lib/index.js",
   "description": "React Native client for Hyperview XML",
   "homepage": "https://hyperview.org",
@@ -23,6 +23,7 @@
       "pre-commit": "pretty-quick --staged"
     }
   },
+  "types": "lib/src/index.d.ts",
   "scripts": {
     "build": "babel src --extensions \".ts,.tsx,.js,.jsx\" --out-dir lib",
     "sync": "babel-node ./scripts/sync",

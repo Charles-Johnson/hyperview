@@ -3,6 +3,7 @@
   "compilerOptions": {
     "allowJs": false,
     "checkJs": false,
+    "declaration": true,
     "lib": [
       "es2019",
       "es2020.bigint",
