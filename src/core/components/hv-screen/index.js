@@ -172,9 +172,12 @@ export default class HvScreen extends React.Component {
    */
   componentWillUnmount() {
     const { params } = this.getRoute(this.props);
-    const { preloadScreen } = params;
-    if (preloadScreen && this.navigation.getPreloadScreen(preloadScreen)) {
-      this.navigation.removePreloadScreen(preloadScreen);
+    if (
+      params &&
+      params.preloadScreen &&
+      this.navigation.getPreloadScreen(params.preloadScreen)
+    ) {
+      this.navigation.removePreloadScreen(params.preloadScreen);
     }
     if (this.state.url) {
       this.navigation.removeRouteKey(this.state.url);
