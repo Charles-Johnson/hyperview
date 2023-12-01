@@ -101,7 +101,7 @@ export default class HvScreen extends React.Component {
     // The screen may be rendering via a navigation from another HyperScreen.
     // In this case, the url to load in the screen will be passed via navigation props.
     // Otherwise, use the entrypoint URL provided as a prop to the first HyperScreen.
-    const url = params.url || this.props.entrypointUrl || null;
+    const url = params?.url || this.props.entrypointUrl || null;
 
     const preloadScreen = params.preloadScreen
       ? this.navigation.getPreloadScreen(params.preloadScreen)
@@ -161,7 +161,7 @@ export default class HvScreen extends React.Component {
       const styles = preloadScreen
         ? Stylesheets.createStylesheets(preloadScreen)
         : // eslint-disable-next-line react/no-access-state-in-setstate
-          this.state.styles;
+        this.state.styles;
 
       this.setState({ doc, styles, url: newUrl });
     }
@@ -292,9 +292,9 @@ export default class HvScreen extends React.Component {
           {screenElement}
           {elementErrorComponent
             ? React.createElement(elementErrorComponent, {
-                error: this.state.elementError,
-                onPressReload: () => this.reload(),
-              })
+              error: this.state.elementError,
+              onPressReload: () => this.reload(),
+            })
             : null}
         </Contexts.DateFormatContext.Provider>
       </Contexts.DocContext.Provider>
