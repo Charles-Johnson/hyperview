@@ -138,8 +138,8 @@ export default class HvScreen extends React.Component {
     const oldNavigationState = this.getRoute(this.props);
     const newNavigationState = this.getRoute(nextProps);
 
-    const newUrl = newNavigationState.params.url;
-    const oldUrl = oldNavigationState.params.url;
+    const newUrl = newNavigationState.params?.url;
+    const oldUrl = oldNavigationState.params?.url;
     const newPreloadScreen = newNavigationState.params?.preloadScreen;
     const oldPreloadScreen = oldNavigationState.params?.preloadScreen;
 
