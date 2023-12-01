@@ -201,7 +201,7 @@ export default class HvScreen extends React.Component {
     const { params, key: routeKey } = this.getRoute(this.props);
 
     try {
-      if (params.delay) {
+      if (params?.delay) {
         await later(parseInt(params.delay, 10));
       }
 
