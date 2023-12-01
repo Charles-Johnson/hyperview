@@ -103,7 +103,7 @@ export default class HvScreen extends React.Component {
     // Otherwise, use the entrypoint URL provided as a prop to the first HyperScreen.
     const url = params?.url || this.props.entrypointUrl || null;
 
-    const preloadScreen = params.preloadScreen
+    const preloadScreen = params?.preloadScreen
       ? this.navigation.getPreloadScreen(params.preloadScreen)
       : null;
     const preloadStyles = preloadScreen
@@ -140,8 +140,8 @@ export default class HvScreen extends React.Component {
 
     const newUrl = newNavigationState.params.url;
     const oldUrl = oldNavigationState.params.url;
-    const newPreloadScreen = newNavigationState.params.preloadScreen;
-    const oldPreloadScreen = oldNavigationState.params.preloadScreen;
+    const newPreloadScreen = newNavigationState.params?.preloadScreen;
+    const oldPreloadScreen = oldNavigationState.params?.preloadScreen;
 
     if (newPreloadScreen !== oldPreloadScreen) {
       this.navigation.removePreloadScreen(oldPreloadScreen);
