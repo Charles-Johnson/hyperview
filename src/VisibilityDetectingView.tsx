@@ -62,6 +62,10 @@ export default class VisibilityDetectingView extends PureComponent<Props> {
     pageX: number,
     pageY: number,
   ) => {
+    if (x === undefined) {
+      // Seems to be a bug with Android
+      return;
+    }
     // Grab metrics
     const windowDimensions = Dimensions.get('window');
     const bottom = pageY + height;
