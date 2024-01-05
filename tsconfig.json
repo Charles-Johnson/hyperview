@@ -4,6 +4,7 @@
     "allowJs": false,
     "checkJs": false,
     "declaration": true,
+    "declarationMap": true,
     "noEmit": false,
     "lib": [
       "es2019",
@@ -27,5 +28,5 @@
     },
     "types": ["react-native", "jest", "node"]
   },
-  "exclude": ["**/*.js", "**/*.jsx", "demo/**/*"]
+  "exclude": ["**/*.js", "**/*.jsx", "demo/**/*", "lib/**/*"]
 }
