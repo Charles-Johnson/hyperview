@@ -23,7 +23,7 @@
       "pre-commit": "pretty-quick --staged"
     }
   },
-  "types": "lib/src/index.d.ts",
+  "types": "./lib/src/index.d.ts",
   "scripts": {
     "build": "babel src --extensions \".ts,.tsx,.js,.jsx\" --out-dir lib",
     "sync": "babel-node ./scripts/sync",

@@ -4,6 +4,7 @@
     "allowJs": false,
     "checkJs": false,
     "declaration": true,
+    "noEmit": false,
     "lib": [
       "es2019",
       "es2020.bigint",
