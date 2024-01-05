@@ -6,6 +6,7 @@
  *
  */
 
+import * as NavigatorService from 'hyperview/src/services/navigator';
 import * as Stylesheets from './services/stylesheets';
 import Navigation from './services/navigation';
 import type { Route as NavigatorRoute } from './services/navigator';
@@ -224,6 +225,7 @@ export type HvComponentProps = {
   onUpdate: HvComponentOnUpdate;
   options: HvComponentOptions;
   stylesheets: StyleSheets;
+  navigation?: NavigatorService.NavigationProp;
 };
 
 // This type exists for casting since our current version of Flow

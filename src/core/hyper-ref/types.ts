@@ -6,6 +6,7 @@
  *
  */
 
+import * as NavigatorService from 'hyperview/src/services/navigator';
 import type {
   HvComponentOnUpdate,
   HvComponentOptions,
@@ -19,6 +20,7 @@ export type Props = {
   onUpdate: HvComponentOnUpdate;
   options: HvComponentOptions;
   stylesheets: StyleSheets;
+  navigation?: NavigatorService.NavigationProp;
 };
 
 export type State = {
