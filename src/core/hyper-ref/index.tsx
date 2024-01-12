@@ -10,7 +10,6 @@ import * as Behaviors from 'hyperview/src/services/behaviors';
 import * as Dom from 'hyperview/src/services/dom';
 import * as Events from 'hyperview/src/services/events';
 import * as Namespaces from 'hyperview/src/services/namespaces';
-import * as NavigatorService from 'hyperview/src/services/navigator';
 import * as Render from 'hyperview/src/services/render';
 import {
   BEHAVIOR_ATTRIBUTES,
@@ -34,7 +33,6 @@ import {
   Text,
   TouchableOpacity,
 } from 'react-native';
-import { NavigationProp } from '@react-navigation/native';
 import { PRESS_TRIGGERS_PROP_NAMES } from './types';
 import VisibilityDetectingView from 'hyperview/src/VisibilityDetectingView';
 import { XMLSerializer } from '@instawork/xmldom';
@@ -386,7 +384,6 @@ export default class HyperRef extends PureComponent<Props, State> {
       VisibilityDetectingView,
       {
         id,
-        navigation: this.props.navigation,
         onInvisible: null,
         onVisible,
         style: this.getStyle(),
@@ -403,7 +400,6 @@ export default class HyperRef extends PureComponent<Props, State> {
       this.props.stylesheets,
       this.props.onUpdate,
       { ...this.props.options, pressed: this.state.pressed, skipHref: true },
-      this.props.navigation,
     );
 
     const { ScrollableView, TouchableView, VisibilityView } = this;
@@ -425,7 +421,6 @@ export const addHref = (
   stylesheets: StyleSheets,
   onUpdate: HvComponentOnUpdate,
   options: HvComponentOptions,
-  navigation?: NavigatorService.NavigationProp,
 ) => {
   const href = element.getAttribute('href');
   const action = element.getAttribute('action');
@@ -440,13 +435,7 @@ export const addHref = (
 
   return React.createElement(
     HyperRef,
-    { element, navigation, onUpdate, options, stylesheets },
-    ...Render.renderChildren(
-      element,
-      stylesheets,
-      onUpdate,
-      options,
-      navigation,
-    ),
+    { element, onUpdate, options, stylesheets },
+    ...Render.renderChildren(element, stylesheets, onUpdate, options),
   );
 };

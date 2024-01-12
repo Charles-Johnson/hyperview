@@ -377,7 +377,6 @@ export default class HvSectionList extends PureComponent<
                   this.props.stylesheets,
                   this.onUpdate,
                   this.props.options,
-                  this.props.navigation,
                 )
               }
               // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -387,7 +386,6 @@ export default class HvSectionList extends PureComponent<
                   this.props.stylesheets,
                   this.onUpdate,
                   this.props.options,
-                  this.props.navigation,
                 )
               }
               scrollIndicatorInsets={scrollIndicatorInsets}

@@ -114,7 +114,6 @@ export default class HvSelectSingle extends PureComponent<HvComponentProps> {
           ...this.props.options,
           onSelect: this.onSelect,
         },
-        this.props.navigation,
       ),
     );
   }

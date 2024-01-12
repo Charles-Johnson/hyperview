@@ -44,7 +44,6 @@ export default class HvText extends PureComponent<HvComponentProps> {
           preformatted:
             this.props.element.getAttribute('preformatted') === 'true',
         },
-        this.props.navigation,
       ),
     );
 
@@ -56,7 +55,6 @@ export default class HvText extends PureComponent<HvComponentProps> {
           this.props.stylesheets,
           this.props.onUpdate as HvComponentOnUpdate,
           this.props.options,
-          this.props.navigation,
         );
   }
 }

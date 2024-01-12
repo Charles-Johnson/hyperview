@@ -194,7 +194,6 @@ export default class HvView extends PureComponent<HvComponentProps> {
             }
           : {}),
       },
-      this.props.navigation,
     );
 
     /* eslint-disable react/jsx-props-no-spreading */
@@ -248,7 +247,6 @@ export default class HvView extends PureComponent<HvComponentProps> {
         this.props.stylesheets,
         this.props.onUpdate as HvComponentOnUpdate,
         this.props.options,
-        this.props.navigation,
       )
     );
   }

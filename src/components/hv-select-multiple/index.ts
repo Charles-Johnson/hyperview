@@ -119,7 +119,6 @@ export default class HvSelectMultiple extends PureComponent<HvComponentProps> {
           ...this.props.options,
           onToggle: this.onToggle,
         },
-        this.props.navigation,
       ),
     );
   }

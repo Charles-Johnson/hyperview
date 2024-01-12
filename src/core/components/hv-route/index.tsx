@@ -275,15 +275,9 @@ class HvRouteInner extends PureComponent<Types.InnerRouteProps, ScreenState> {
         const component:
           | string
           | React.ReactElement<unknown, string | JSXElementConstructor<unknown>>
-          | null = Render.renderElement(
-          body,
-          styleSheet,
-          () => noop,
-          {
-            componentRegistry: this.componentRegistry,
-          },
-          this.props.navigation,
-        );
+          | null = Render.renderElement(body, styleSheet, () => noop, {
+          componentRegistry: this.componentRegistry,
+        });
         if (component) {
           return <>{component}</>;
         }

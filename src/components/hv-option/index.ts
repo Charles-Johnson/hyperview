@@ -103,7 +103,6 @@ export default class HvOption extends PureComponent<HvComponentProps, State> {
           this.props.stylesheets,
           this.props.onUpdate as HvComponentOnUpdate,
           newOptions,
-          this.props.navigation,
         ),
       ),
     );

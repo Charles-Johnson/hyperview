@@ -283,7 +283,6 @@ export default class HvScreen extends React.Component {
         screenUrl: this.state.url,
         staleHeaderType: this.state.staleHeaderType,
       },
-      this.props.navigation,
     );
 
     return (

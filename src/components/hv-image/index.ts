@@ -51,7 +51,6 @@ export default class HvImage extends PureComponent<HvComponentProps> {
           this.props.stylesheets,
           this.props.onUpdate as HvComponentOnUpdate,
           this.props.options,
-          this.props.navigation,
         );
   }
 }

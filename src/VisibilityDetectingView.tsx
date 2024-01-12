@@ -6,7 +6,6 @@
  *
  */
 
-import * as NavigatorService from 'hyperview/src/services/navigator';
 import { Dimensions, View } from 'react-native';
 import React, { PureComponent } from 'react';
 import type { StyleProp, ViewStyle } from 'react-native';
@@ -20,7 +19,6 @@ type Props = {
   onInvisible: (() => void | null | undefined) | null;
   onVisible: () => void | null | undefined;
   style: StyleProp<ViewStyle> | null | undefined;
-  navigation?: NavigatorService.NavigationProp;
 };
 
 /** A view that lets you know when its contents become visible/invisible in the screen.
@@ -35,8 +33,6 @@ export default class VisibilityDetectingView extends PureComponent<Props> {
   unmounted = false;
 
   view: ElementRef<typeof View> | null | undefined;
-
-  removeOnFocusListener?: () => void;
 
   onRef = (view?: ElementRef<typeof View> | null) => {
     this.view = view;
@@ -96,20 +92,11 @@ export default class VisibilityDetectingView extends PureComponent<Props> {
 
   start = () => {
     this.tickInterval = setInterval(this.onTick, TICK_INTERVAL);
-    if (this.props.onVisible) {
-      this.removeOnFocusListener = this.props.navigation?.addListener(
-        'focus',
-        this.props.onVisible,
-      );
-    }
   };
 
   stop = () => {
     if (this.tickInterval) {
       clearInterval(this.tickInterval);
-    }
-    if (this.removeOnFocusListener) {
-      this.removeOnFocusListener();
     }
   };
 

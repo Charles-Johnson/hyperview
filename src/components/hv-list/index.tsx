@@ -267,7 +267,6 @@ export default class HvList extends PureComponent<HvComponentProps, State> {
                   this.props.stylesheets,
                   this.onUpdate,
                   this.props.options,
-                  this.props.navigation,
                 )
               }
               scrollIndicatorInsets={scrollIndicatorInsets}

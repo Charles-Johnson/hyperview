@@ -8,7 +8,6 @@
 
 import * as InlineContext from 'hyperview/src/services/inline-context';
 import * as Namespaces from 'hyperview/src/services/namespaces';
-import * as NavigatorService from 'hyperview/src/services/navigator';
 import type {
   HvComponentOnUpdate,
   HvComponentOptions,
@@ -22,7 +21,6 @@ export const renderElement = (
   stylesheets: StyleSheets,
   onUpdate: HvComponentOnUpdate,
   options: HvComponentOptions,
-  navigation?: NavigatorService.NavigationProp,
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
 ): React.ReactElement<any> | null | string => {
   if (!element) {
@@ -103,7 +101,6 @@ export const renderElement = (
           onUpdate={onUpdate}
           options={componentOptions}
           stylesheets={stylesheets}
-          navigation={navigation}
           {...extraProps} // eslint-disable-line react/jsx-props-no-spreading
         />
       );
@@ -157,7 +154,6 @@ export const renderChildren = (
   stylesheets: StyleSheets,
   onUpdate: HvComponentOnUpdate,
   options: HvComponentOptions,
-  navigation?: NavigatorService.NavigationProp,
 ) => {
   const children = [];
   if (element.childNodes) {
@@ -168,7 +164,6 @@ export const renderChildren = (
         stylesheets,
         onUpdate,
         { ...options, skipHref: false },
-        navigation,
       );
       if (e) {
         children.push(e);
