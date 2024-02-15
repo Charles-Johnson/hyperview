@@ -348,7 +348,12 @@ export default class HyperRef extends PureComponent<Props, State> {
     });
     return React.createElement(
       ScrollView,
-      { refreshControl, style: this.getStyle() },
+      {
+        refreshControl,
+        showsVerticalScrollIndicator:
+          this.props.element.getAttribute('shows-scroll-indicator') !== 'false',
+        style: this.getStyle(),
+      },
       children,
     );
   };
