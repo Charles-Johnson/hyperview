@@ -35,7 +35,6 @@ export const LOCAL_NAME = {
   NAVIGATOR: 'navigator',
   OFFSET: 'offset',
   OPTION: 'option',
-  PICKER_FIELD: 'picker-field',
   PICKER_ITEM: 'picker-item',
   POSITION: 'position',
   SCREEN: 'screen',

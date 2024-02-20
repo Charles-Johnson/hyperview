@@ -3,7 +3,6 @@ import '../src/components/hv-date-field/stories/index.tsx';
 import '../src/components/hv-image/stories/index.tsx';
 import '../src/components/hv-list/stories/index.tsx';
 import '../src/components/hv-option/stories/index.tsx';
-import '../src/components/hv-picker-field/stories/index.tsx';
 import '../src/components/hv-section-list/stories/index.tsx';
 import '../src/components/hv-select-multiple/stories/index.tsx';
 import '../src/components/hv-select-single/stories/index.tsx';

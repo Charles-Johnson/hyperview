@@ -12,7 +12,6 @@ import HvDateField from 'hyperview/src/components/hv-date-field';
 import HvImage from 'hyperview/src/components/hv-image';
 import HvList from 'hyperview/src/components/hv-list';
 import HvOption from 'hyperview/src/components/hv-option';
-import HvPickerField from 'hyperview/src/components/hv-picker-field';
 import HvSectionList from 'hyperview/src/components/hv-section-list';
 import HvSelectMultiple from 'hyperview/src/components/hv-select-multiple';
 import HvSelectSingle from 'hyperview/src/components/hv-select-single';
@@ -35,7 +34,6 @@ const defaultRegistryContent = {
   items: HvView,
   list: HvList,
   option: HvOption,
-  'picker-field': HvPickerField,
   'section-list': HvSectionList,
   'section-title': HvView,
   'select-multiple': HvSelectMultiple,
@@ -51,7 +49,6 @@ const defaultRegistryContent = {
 
 const defaultFormRegistryContent = {
   'date-field': HvDateField,
-  'picker-field': HvPickerField,
   'select-multiple': HvSelectMultiple,
   'select-single': HvSelectSingle,
   switch: HvSwitch,

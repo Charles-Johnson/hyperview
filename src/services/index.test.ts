@@ -16,7 +16,6 @@ import {
 } from 'hyperview/src/services';
 import { DOMParser } from '@instawork/xmldom';
 import HvDateField from 'hyperview/src/components/hv-date-field';
-import HvPickerField from 'hyperview/src/components/hv-picker-field';
 import HvSelectMultiple from 'hyperview/src/components/hv-select-multiple';
 import HvSelectSingle from 'hyperview/src/components/hv-select-single';
 import HvSwitch from 'hyperview/src/components/hv-switch';
@@ -138,7 +137,6 @@ describe('flattenRegistry', () => {
   it('returns flattened registy', () => {
     expect(flattenRegistry(registry)).toEqual([
       ['https://hyperview.org/hyperview', 'date-field', HvDateField],
-      ['https://hyperview.org/hyperview', 'picker-field', HvPickerField],
       ['https://hyperview.org/hyperview', 'select-multiple', HvSelectMultiple],
       ['https://hyperview.org/hyperview', 'select-single', HvSelectSingle],
       ['https://hyperview.org/hyperview', 'switch', HvSwitch],

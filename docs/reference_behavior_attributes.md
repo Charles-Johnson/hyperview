@@ -569,7 +569,6 @@ Note that the target element must only be one of the following elements:
 
 - [`<text-field>`](/docs/reference_textfield)
 - [`<text-area>`](/docs/reference_textarea)
-- [`<picker-field>`](/docs/reference_pickerfield)
 - [`<date-field>`](/docs/reference_datefield)
 - [`<select-single>`](/docs/reference_selectsingle)
 - [`<switch>`](/docs/reference_switch)
