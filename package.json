@@ -1,6 +1,6 @@
 {
   "name": "@charles-johnson/hyperview",
-  "version": "0.75.1",
+  "version": "0.75.2",
   "main": "lib/index.js",
   "description": "React Native client for Hyperview XML",
   "homepage": "https://hyperview.org",
@@ -52,7 +52,7 @@
     "url-parse": "1.5.10"
   },
   "peerDependencies": {
-    "@react-native-community/datetimepicker": "^6.1.1",
+    "@react-native-community/datetimepicker": "^7.6.1",
     "@react-navigation/bottom-tabs": "^6.5.7",
     "@react-navigation/native": "^6.1.6",
     "@react-navigation/stack": "^6.3.16",
@@ -73,7 +73,7 @@
     "@babel/runtime": "7.13.7",
     "@faker-js/faker": "^8.0.2",
     "@prettier/plugin-xml": "0.13.0",
-    "@react-native-community/datetimepicker": "6.1.1",
+    "@react-native-community/datetimepicker": "7.6.1",
     "@react-navigation/bottom-tabs": "6.5.7",
     "@react-navigation/native": "6.1.6",
     "@react-navigation/stack": "6.3.16",
@@ -107,7 +107,7 @@
     "pretty-quick": "3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-native": "^0.71.14",
+    "react-native": "^0.73.4",
     "react-native-gesture-handler": "2.11.0",
     "react-native-keyboard-aware-scrollview": "2.1.0",
     "react-native-webview": "13.6.4",
