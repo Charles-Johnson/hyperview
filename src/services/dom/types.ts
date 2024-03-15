@@ -15,8 +15,11 @@ export const HTTP_HEADERS = {
 } as const;
 
 export const HTTP_METHODS = {
+  DELETE: 'delete',
   GET: 'get',
+  PATCH: 'patch',
   POST: 'post',
+  PUT: 'put',
 } as const;
 
 export type HttpMethod = typeof HTTP_METHODS[keyof typeof HTTP_METHODS];
