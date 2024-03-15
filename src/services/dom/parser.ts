@@ -70,10 +70,7 @@ export class Parser {
     doc: Document;
     staleHeaderType: XResponseStaleReason | null | undefined;
   }> => {
-    // HTTP method can either be POST when explicitly set
-    // Any other value and we'll default to GET
-    const method =
-      httpMethod === HTTP_METHODS.POST ? HTTP_METHODS.POST : HTTP_METHODS.GET;
+    const method = httpMethod || HTTP_METHODS.GET;
 
     // For GET requests, we can't include a body so we encode the form data as a query
     // string in the URL.
