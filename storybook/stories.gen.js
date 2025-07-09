@@ -1,5 +1,4 @@
 // DO NOT EDIT: Auto-generate this file by running `yarn generate`
-import '../src/components/hv-date-field/stories/index.tsx';
 import '../src/components/hv-image/stories/index.tsx';
 import '../src/components/hv-list/stories/index.tsx';
 import '../src/components/hv-option/stories/index.tsx';

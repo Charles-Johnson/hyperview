@@ -8,7 +8,6 @@
 
 import * as ComponentsInternal from './internal';
 import type { ComponentRegistry, HvComponent } from 'hyperview/src/types';
-import HvDateField from 'hyperview/src/components/hv-date-field';
 import HvImage from 'hyperview/src/components/hv-image';
 import HvList from 'hyperview/src/components/hv-list';
 import HvOption from 'hyperview/src/components/hv-option';
@@ -23,7 +22,6 @@ import HvView from 'hyperview/src/components/hv-view';
 import HvWebView from 'hyperview/src/components/hv-web-view';
 
 const HYPERVIEW_COMPONENTS = [
-  HvDateField,
   HvList,
   HvOption,
   HvSectionList,

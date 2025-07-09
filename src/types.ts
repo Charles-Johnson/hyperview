@@ -19,7 +19,6 @@ export const LOCAL_NAME = {
   ANIMATED: 'animated',
   BEHAVIOR: 'behavior',
   BODY: 'body',
-  DATE_FIELD: 'date-field',
   DIALOG_TITLE: 'dialog-title',
   DOC: 'doc',
   FORM: 'form',

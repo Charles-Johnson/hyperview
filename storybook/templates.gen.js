@@ -1,68 +1,7 @@
 // DO NOT EDIT: Auto-generate this file by running `yarn generate`
 export default {
-  'hyperview/src/components/hv-date-field/stories/basic.xml':
-  `<doc xmlns="https://hyperview.org/hyperview">
-  <screen>
-    <styles>
-      <style id="Body" backgroundColor="white" flex="1" />
-      <style
-        id="Input"
-        borderBottomColor="#E1E1E1"
-        borderBottomWidth="1"
-        borderColor="#4E4D4D"
-        flex="1"
-        paddingBottom="8"
-        paddingTop="8"
-      >
-        <modifier pressed="true">
-          <style borderBottomColor="#4778FF" />
-        </modifier>
-        <modifier focused="true">
-          <style borderBottomColor="#4778FF" />
-        </modifier>
-      </style>
-      <style id="Input__Text" fontSize="16" fontWeight="normal" />
-      <style
-        id="PickerModal"
-        backgroundColor="white"
-        borderTopColor="#E1E1E1"
-        borderTopWidth="1"
-        shadowOffsetX="0"
-        shadowOffsetY="-5"
-        shadowOpacity="0.2"
-        shadowRadius="5"
-      />
-      <style id="PickerModal__overlay" backgroundColor="#1f1f1fa0" />
-      <style
-        id="PickerModal__text"
-        color="blue"
-        fontSize="16"
-        fontWeight="600"
-        marginBottom="16"
-        padding="24"
-      >
-        <modifier pressed="true">
-          <style opacity="0.5" />
-        </modifier>
-      </style>
-    </styles>
-    <body style="Body">
-      <date-field
-        field-style="Input"
-        field-text-style="Input__Text"
-        label-format="MMMM D, YYYY"
-        modal-style="PickerModal"
-        modal-overlay-style="PickerModal__overlay"
-        modal-text-style="PickerModal__text"
-        placeholder="Select date"
-        placeholderTextColor="#8D9494"
-      />
-    </body>
-  </screen>
-</doc>
-`,
   'hyperview/src/components/hv-image/stories/basic.xml':
-  `<doc xmlns="https://hyperview.org/hyperview">
+    `<doc xmlns="https://hyperview.org/hyperview">
   <screen>
     <styles>
       <style id="Body" backgroundColor="white" flex="1" />
@@ -78,7 +17,7 @@ export default {
 </doc>
 `,
   'hyperview/src/components/hv-list/stories/basic.xml':
-  `<doc xmlns="https://hyperview.org/hyperview">
+    `<doc xmlns="https://hyperview.org/hyperview">
   <screen>
     <styles>
       <style
@@ -204,7 +143,7 @@ export default {
 </doc>
 `,
   'hyperview/src/components/hv-list/stories/infinite_scroll.xml':
-  `<doc xmlns="https://hyperview.org/hyperview">
+    `<doc xmlns="https://hyperview.org/hyperview">
   <screen>
     <styles>
       <style
@@ -350,7 +289,7 @@ export default {
 </doc>
 `,
   'hyperview/src/components/hv-option/stories/basic.xml':
-  `<doc xmlns="https://hyperview.org/hyperview">
+    `<doc xmlns="https://hyperview.org/hyperview">
   <screen>
     <styles>
       <style id="Body" backgroundColor="white" flex="1" />
@@ -422,7 +361,7 @@ export default {
 </doc>
 `,
   'hyperview/src/components/hv-option/stories/custom.xml':
-  `<doc xmlns="https://hyperview.org/hyperview">
+    `<doc xmlns="https://hyperview.org/hyperview">
   <screen>
     <styles>
       <style id="Body" backgroundColor="white" flex="1" />
@@ -509,7 +448,7 @@ export default {
 </doc>
 `,
   'hyperview/src/components/hv-option/stories/pre_selected.xml':
-  `<doc xmlns="https://hyperview.org/hyperview">
+    `<doc xmlns="https://hyperview.org/hyperview">
   <screen>
     <styles>
       <style id="Body" backgroundColor="white" flex="1" />
@@ -581,7 +520,7 @@ export default {
 </doc>
 `,
   'hyperview/src/components/hv-section-list/stories/basic.xml':
-  `<doc xmlns="https://hyperview.org/hyperview">
+    `<doc xmlns="https://hyperview.org/hyperview">
   <screen>
     <styles>
       <style
@@ -734,7 +673,7 @@ export default {
 </doc>
 `,
   'hyperview/src/components/hv-section-list/stories/infinite_scroll.xml':
-  `<doc xmlns="https://hyperview.org/hyperview">
+    `<doc xmlns="https://hyperview.org/hyperview">
   <screen>
     <styles>
       <style
@@ -907,7 +846,7 @@ export default {
 </doc>
 `,
   'hyperview/src/components/hv-section-list/stories/infinite_scroll_append.xml':
-  `<doc xmlns="https://hyperview.org/hyperview">
+    `<doc xmlns="https://hyperview.org/hyperview">
   <screen>
     <styles>
       <style
@@ -1082,7 +1021,7 @@ export default {
 </doc>
 `,
   'hyperview/src/components/hv-select-multiple/stories/basic.xml':
-  `<doc xmlns="https://hyperview.org/hyperview">
+    `<doc xmlns="https://hyperview.org/hyperview">
   <screen>
     <styles>
       <style
@@ -1361,7 +1300,7 @@ export default {
 </doc>
 `,
   'hyperview/src/components/hv-select-single/stories/basic.xml':
-  `<doc xmlns="https://hyperview.org/hyperview">
+    `<doc xmlns="https://hyperview.org/hyperview">
   <screen>
     <styles>
       <style
@@ -1636,7 +1575,7 @@ export default {
 </doc>
 `,
   'hyperview/src/components/hv-spinner/stories/basic.xml':
-  `<doc xmlns="https://hyperview.org/hyperview">
+    `<doc xmlns="https://hyperview.org/hyperview">
   <screen>
     <styles>
       <style id="Body" backgroundColor="white" flex="1" />
@@ -1648,7 +1587,7 @@ export default {
 </doc>
 `,
   'hyperview/src/components/hv-spinner/stories/colored.xml':
-  `<doc xmlns="https://hyperview.org/hyperview">
+    `<doc xmlns="https://hyperview.org/hyperview">
   <screen>
     <styles>
       <style id="Body" backgroundColor="white" flex="1" />
@@ -1660,7 +1599,7 @@ export default {
 </doc>
 `,
   'hyperview/src/components/hv-switch/stories/basic.xml':
-  `<doc xmlns="https://hyperview.org/hyperview">
+    `<doc xmlns="https://hyperview.org/hyperview">
   <screen>
     <styles>
       <style id="Body" backgroundColor="white" flex="1" />
@@ -1677,7 +1616,7 @@ export default {
 </doc>
 `,
   'hyperview/src/components/hv-text-field/stories/basic.xml':
-  `<doc xmlns="https://hyperview.org/hyperview">
+    `<doc xmlns="https://hyperview.org/hyperview">
   <screen>
     <styles>
       <style
@@ -1901,7 +1840,7 @@ export default {
 </doc>
 `,
   'hyperview/src/components/hv-text-field/stories/text-area.xml':
-  `<doc xmlns="https://hyperview.org/hyperview">
+    `<doc xmlns="https://hyperview.org/hyperview">
   <screen>
     <styles>
       <style
@@ -2052,7 +1991,7 @@ four"
 </doc>
 `,
   'hyperview/src/components/hv-text/stories/basic.xml':
-  `<doc xmlns="https://hyperview.org/hyperview">
+    `<doc xmlns="https://hyperview.org/hyperview">
   <screen>
     <styles>
       <style
@@ -2135,7 +2074,7 @@ four"
 </doc>
 `,
   'hyperview/src/components/hv-view/stories/basic.xml':
-  `<doc xmlns="https://hyperview.org/hyperview">
+    `<doc xmlns="https://hyperview.org/hyperview">
   <screen>
     <styles>
       <style
@@ -2231,7 +2170,7 @@ four"
 </doc>
 `,
   'hyperview/src/components/hv-view/stories/scrollview.xml':
-  `<doc xmlns="https://hyperview.org/hyperview">
+    `<doc xmlns="https://hyperview.org/hyperview">
   <screen>
     <styles>
       <style
@@ -2340,7 +2279,7 @@ four"
 </doc>
 `,
   'hyperview/src/components/hv-web-view/stories/basic.xml':
-  `<doc xmlns="https://hyperview.org/hyperview">
+    `<doc xmlns="https://hyperview.org/hyperview">
   <screen>
     <body style="Body">
       <web-view

@@ -8,7 +8,6 @@
 
 import * as Components from 'hyperview/src/services/components';
 import type { HvComponentProps } from 'hyperview/src/types';
-import HvDateField from 'hyperview/src/components/hv-date-field';
 import HvImage from 'hyperview/src/components/hv-image';
 import HvList from 'hyperview/src/components/hv-list';
 import HvOption from 'hyperview/src/components/hv-option';
@@ -26,7 +25,6 @@ import { PureComponent } from 'react';
 
 const defaultRegistryContent = {
   body: HvView,
-  'date-field': HvDateField,
   form: HvView,
   header: HvView,
   image: HvImage,
@@ -48,7 +46,6 @@ const defaultRegistryContent = {
 } as const;
 
 const defaultFormRegistryContent = {
-  'date-field': HvDateField,
   'select-multiple': HvSelectMultiple,
   'select-single': HvSelectSingle,
   switch: HvSwitch,
