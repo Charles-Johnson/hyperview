@@ -102,10 +102,10 @@ export default class HvView extends PureComponent<HvComponentProps> {
       ATTRIBUTES.CONTENT_CONTAINER_STYLE
     ]
       ? createStyleProp(this.props.element, this.props.stylesheets, {
-          ...this.props.options,
-          styleAttr: ATTRIBUTES.CONTENT_CONTAINER_STYLE,
-        })
-      : undefined) as ViewStyle;
+        ...this.props.options,
+        styleAttr: ATTRIBUTES.CONTENT_CONTAINER_STYLE,
+      })
+      : undefined);
 
     // Fix scrollbar rendering issue in iOS 13+
     // https://github.com/facebook/react-native/issues/26610#issuecomment-539843444
@@ -120,7 +120,7 @@ export default class HvView extends PureComponent<HvComponentProps> {
       // eslint-disable-next-line no-confusing-arrow
       (acc, element, index) =>
         typeof element !== 'string' &&
-        element.props?.element?.getAttribute('sticky') === 'true'
+          element.props?.element?.getAttribute('sticky') === 'true'
           ? [...acc, index]
           : acc,
       [],
@@ -186,12 +186,12 @@ export default class HvView extends PureComponent<HvComponentProps> {
         ...this.props.options,
         ...(scrollable && hasInputFields
           ? {
-              registerInputHandler: ref => {
-                if (ref !== null) {
-                  inputFieldRefs.push(ref);
-                }
-              },
-            }
+            registerInputHandler: ref => {
+              if (ref !== null) {
+                inputFieldRefs.push(ref);
+              }
+            },
+          }
           : {}),
       },
     );

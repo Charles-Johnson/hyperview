@@ -86,7 +86,7 @@ export default (props: Props): JSX.Element => {
     overlayAnimationDuration,
   );
 
-  const targetOpacity: number = overlayStyle?.opacity ?? 1;
+  const targetOpacity = typeof overlayStyle?.opacity === "number" ? overlayStyle.opacity : 1;
 
   const openModal = () => () => {
     translateY.setValue(height);

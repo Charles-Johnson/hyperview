@@ -69,7 +69,7 @@ export default class HvSwitch extends PureComponent<HvComponentProps> {
     const props = {
       ios_backgroundColor: unselectedStyle
         ? unselectedStyle.backgroundColor
-        : null,
+        : undefined,
       onChange: () => {
         const newElement = this.props.element.cloneNode(true) as Element;
         Behaviors.trigger('change', newElement, this.props.onUpdate);
@@ -81,7 +81,7 @@ export default class HvSwitch extends PureComponent<HvComponentProps> {
         this.props.onUpdate(null, 'swap', this.props.element, { newElement });
       },
       // iOS thumbColor default
-      thumbColor: unselectedStyle?.color || selectedStyle?.color,
+      thumbColor: "color" in unselectedStyle && unselectedStyle?.color || "color" in selectedStyle && selectedStyle?.color || undefined,
       trackColor: {
         false: unselectedStyle ? unselectedStyle.backgroundColor : null,
         true: selectedStyle ? selectedStyle.backgroundColor : null,
@@ -101,9 +101,9 @@ export default class HvSwitch extends PureComponent<HvComponentProps> {
     }
 
     // if thumbColors are explicitly specified, override defaults
-    if (props.value && selectedStyle?.color) {
+    if (props.value && "color" in selectedStyle && selectedStyle?.color) {
       props.thumbColor = selectedStyle.color;
-    } else if (!props.value && unselectedStyle?.color) {
+    } else if (!props.value && "color" in unselectedStyle && unselectedStyle?.color) {
       props.thumbColor = unselectedStyle.color;
     }
 

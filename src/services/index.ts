@@ -19,7 +19,7 @@ import type {
 } from 'hyperview/src/types';
 import { DEFAULT_PRESS_OPACITY, HV_TIMEOUT_ID_ATTR } from './types';
 import { NODE_TYPE } from 'hyperview/src/types';
-import { Platform } from 'react-native';
+import { Platform, TextStyle, ViewStyle } from 'react-native';
 
 /**
  * This file is currently a dumping place for every functions used accross
@@ -30,7 +30,7 @@ export const createStyleProp = (
   element: Element,
   stylesheets: StyleSheets,
   options: HvComponentOptions,
-): Array<StyleSheet> => {
+): (ViewStyle | TextStyle)[] => {
   const styleAttr: string = options.styleAttr || 'style';
   if (!element.getAttribute(styleAttr)) {
     return [];
