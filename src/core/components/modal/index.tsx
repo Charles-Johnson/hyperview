@@ -13,7 +13,7 @@ import {
   StyleSheet,
   View,
 } from 'react-native';
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, JSX } from 'react';
 import ModalButton from './modal-button';
 import Overlay from './overlay';
 import type { Props } from './types';

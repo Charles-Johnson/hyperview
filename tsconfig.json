@@ -24,9 +24,20 @@
     ],
     "outDir": "lib",
     "paths": {
-      "hyperview/*": ["./*"]
+      "hyperview/*": [
+        "./*"
+      ]
     },
-    "types": ["react-native", "jest", "node"]
+    "types": [
+      "react-native",
+      "jest",
+      "node"
+    ]
   },
-  "exclude": ["**/*.js", "**/*.jsx", "demo/**/*", "lib/**/*"]
+  "exclude": [
+    "**/*.js",
+    "**/*.jsx",
+    "demo/**/*",
+    "lib/**/*"
+  ]
 }

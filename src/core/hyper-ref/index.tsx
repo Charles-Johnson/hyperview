@@ -26,7 +26,7 @@ import type {
   Trigger,
 } from 'hyperview/src/types';
 import type { PressHandlers, PressPropName, Props, State } from './types';
-import React, { PureComponent } from 'react';
+import React, { PureComponent, JSX } from 'react';
 import {
   RefreshControl,
   ScrollView,
@@ -281,12 +281,12 @@ export default class HyperRef extends PureComponent<Props, State> {
     // If element is a <text> nested under another <text>, simply add press events
     const isNestedUnderText =
       (this.props.element.parentNode as Element)?.namespaceURI ===
-        Namespaces.HYPERVIEW &&
+      Namespaces.HYPERVIEW &&
       (this.props.element.parentNode as Element)?.localName === LOCAL_NAME.TEXT;
 
     if (isNestedUnderText) {
       // eslint-disable-next-line @typescript-eslint/no-empty-function
-      const noop = () => {};
+      const noop = () => { };
       return (
         <Text
           accessibilityLabel={accessibilityLabel}

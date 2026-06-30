@@ -12,7 +12,7 @@ import * as Namespaces from 'hyperview/src/services/namespaces';
 import * as Stylesheets from 'hyperview/src/services/stylesheets';
 import type { HvComponent, LocalName } from 'hyperview/src/types';
 import { DOMParser } from '@instawork/xmldom';
-import React from 'react';
+import React, { JSX } from 'react';
 import { action } from '@storybook/addon-actions';
 
 const parser = new DOMParser();
@@ -28,7 +28,7 @@ export const getElements = (
 
 export const getDummyHvProps = () => ({
   // eslint-disable-next-line @typescript-eslint/no-empty-function
-  onUpdate: () => {},
+  onUpdate: () => { },
   options: {},
   stylesheets: {
     focused: [],
