@@ -63,9 +63,4 @@ const CustomTabNavigator = (props: Types.Props) => {
   );
 };
 
-export const createCustomTabNavigator = createNavigatorFactory<
-  Readonly<Types.NavigationState>,
-  object,
-  Types.EventMapBase,
-  typeof CustomTabNavigator
->(CustomTabNavigator);
+export const createCustomTabNavigator = createNavigatorFactory(CustomTabNavigator);

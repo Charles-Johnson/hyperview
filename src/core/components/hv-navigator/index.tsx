@@ -34,8 +34,8 @@ import { getFirstChildTag } from 'hyperview/src/services/dom/helpers';
  */
 const SHOW_NAVIGATION_UI = false;
 
-const Stack = createCustomStackNavigator<ParamTypes>();
-const BottomTab = createCustomTabNavigator<ParamTypes>();
+const Stack = createCustomStackNavigator();
+const BottomTab = createCustomTabNavigator();
 
 export default class HvNavigator extends PureComponent<Props> {
   behaviorElements: Element[] = [];
@@ -262,8 +262,8 @@ export default class HvNavigator extends PureComponent<Props> {
     const selected:
       | Element
       | undefined = NavigatorService.getSelectedNavRouteElement(
-      this.props.element,
-    );
+        this.props.element,
+      );
 
     const selectedId: string | undefined = selected
       ? selected.getAttribute('id')?.toString()
@@ -274,7 +274,7 @@ export default class HvNavigator extends PureComponent<Props> {
         return (
           <Stack.Navigator
             id={id}
-            screenOptions={({ route }) => this.stackScreenOptions(route)}
+            screenOptions={({ route }: { route: ScreenParams }) => this.stackScreenOptions(route)}
           >
             {this.buildScreens(this.props.element, type)}
           </Stack.Navigator>
@@ -285,7 +285,7 @@ export default class HvNavigator extends PureComponent<Props> {
             backBehavior="none"
             id={id}
             initialRouteName={selectedId}
-            screenOptions={({ route }) => this.tabScreenOptions(route)}
+            screenOptions={({ route }: { route: ScreenParams }) => this.tabScreenOptions(route)}
           >
             {this.buildScreens(this.props.element, type)}
           </BottomTab.Navigator>
@@ -331,7 +331,7 @@ export default class HvNavigator extends PureComponent<Props> {
     return (
       <Stack.Navigator
         id={id}
-        screenOptions={({ route }) => this.stackScreenOptions(route)}
+        screenOptions={({ route }: { route: ScreenParams }) => this.stackScreenOptions(route)}
       >
         {screens}
       </Stack.Navigator>

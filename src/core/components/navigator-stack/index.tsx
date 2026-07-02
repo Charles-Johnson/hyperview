@@ -58,9 +58,4 @@ const CustomStackNavigator = (props: Types.Props) => {
   );
 };
 
-export const createCustomStackNavigator = createNavigatorFactory<
-  Readonly<Types.NavigationState>,
-  StackNavigationOptions,
-  Types.EventMapBase,
-  typeof CustomStackNavigator
->(CustomStackNavigator);
+export const createCustomStackNavigator = createNavigatorFactory(CustomStackNavigator);

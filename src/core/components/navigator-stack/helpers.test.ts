@@ -62,6 +62,7 @@ describe('buildRoutesFromDom', () => {
       index: 0,
       key: 'key1',
       routeNames: ['route1'],
+      preloadedRoutes: [],
       routes: [
         {
           key: 'key1',
@@ -94,6 +95,7 @@ describe('buildRoutesFromDom', () => {
       index: 0,
       key: 'key1',
       routeNames: ['route1'],
+      preloadedRoutes: [],
       routes: [
         {
           key: 'key1',
@@ -129,6 +131,7 @@ describe('buildRoutesFromDom', () => {
       index: 0,
       key: 'key1',
       routeNames: ['route1'],
+      preloadedRoutes: [],
       routes: [
         {
           key: 'key2',
@@ -166,6 +169,7 @@ describe('buildRoutesFromDom', () => {
       index: 0,
       key: 'key1',
       routeNames: ['route1'],
+      preloadedRoutes: [],
       routes: [
         {
           key: 'key1',
@@ -203,6 +207,7 @@ describe('buildRoutesFromDom', () => {
       index: 0,
       key: 'key1',
       routeNames: ['route1'],
+      preloadedRoutes: [],
       routes: [
         {
           key: 'key1',
@@ -245,6 +250,7 @@ describe('buildRoutesFromDom', () => {
       index: 0,
       key: 'key1',
       routeNames: ['route1'],
+      preloadedRoutes: [],
       routes: [
         {
           key: 'key1',
