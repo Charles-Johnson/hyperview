@@ -32,6 +32,7 @@ const CustomStackNavigator = (props: Types.Props) => {
     descriptors,
     navigation,
     NavigationContent,
+    describe,
   } = useNavigationBuilder<
     StackNavigationState<Types.ParamListBase>,
     Types.StackOptions,
@@ -53,8 +54,10 @@ const CustomStackNavigator = (props: Types.Props) => {
         descriptors={descriptors}
         navigation={navigation}
         state={state}
+        direction='ltr'
+        describe={describe}
       />
-    </NavigationContent>
+    </NavigationContent >
   );
 };
 

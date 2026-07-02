@@ -1,6 +1,6 @@
 {
   "name": "@charles-johnson/hyperview",
-  "version": "0.81.2",
+  "version": "0.81.3",
   "main": "lib/index.js",
   "description": "React Native client for Hyperview XML",
   "homepage": "https://hyperview.org",
@@ -54,7 +54,7 @@
   "peerDependencies": {
     "@react-navigation/bottom-tabs": "^7",
     "@react-navigation/native": "^7.3.5",
-    "@react-navigation/stack": "^6.3.16",
+    "@react-navigation/stack": "^7",
     "@types/react": "^19.1.4",
     "react": "^19.1.4",
     "react-native": "^0.81.6",
@@ -74,7 +74,7 @@
     "@prettier/plugin-xml": "0.13.0",
     "@react-navigation/bottom-tabs": "^7",
     "@react-navigation/native": "^7.3.5",
-    "@react-navigation/stack": "6.3.16",
+    "@react-navigation/stack": "^7",
     "@storybook/addon-actions": "4.1.18",
     "@storybook/addon-storyshots": "4.1.18",
     "@storybook/react-native": "4.1.18",
